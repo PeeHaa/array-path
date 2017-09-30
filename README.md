@@ -1,6 +1,8 @@
 # array-path
 
-[![Build Status](https://travis-ci.org/PeeHaa/array-path.svg?branch=master)](https://travis-ci.org/PeeHaa/array-path)
+[![Code Coverage](https://scrutinizer-ci.com/g/PeeHaa/array-path/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/PeeHaa/array-path/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/PeeHaa/array-path/badges/build.png?b=master)](https://scrutinizer-ci.com/g/PeeHaa/array-path/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/PeeHaa/array-path/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PeeHaa/array-path/?branch=master)
 
 Yet another array path implementation
 
