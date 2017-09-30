@@ -1,0 +1,14 @@
+sudo: false
+
+language: php
+
+php:
+  - '7.1'
+  - nightly
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer update --no-interaction
+
+script:
+  - phpdbg -qrr vendor/bin/phpunit --coverage-text
