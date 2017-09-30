@@ -109,7 +109,7 @@ class ArrayPathTest extends TestCase
     {
         $match = $this->source;
 
-        (new ArrayPath())->remove($this->source, 'key1.key11.key999');
+        (new ArrayPath())->remove($this->source, 'key1.key99.key999');
 
         $this->assertSame($match, $this->source);
     }
