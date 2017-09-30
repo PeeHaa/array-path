@@ -104,4 +104,13 @@ class ArrayPathTest extends TestCase
 
         $this->assertSame($match, $this->source);
     }
+
+    public function testRemoveNonExistingMotherKey()
+    {
+        $match = $this->source;
+
+        (new ArrayPath())->remove($this->source, 'key1.key11.key999');
+
+        $this->assertSame($match, $this->source);
+    }
 }
