@@ -14,15 +14,15 @@ Yet another array path implementation
 
 ### ``get()``
 
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz'], 'foo.bar'); // baz
+    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.bar'); // baz
     
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz'], 'foo.qux'); // throws \PeeHaa\ArrayPath\NotFoundException
+    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.qux'); // throws \PeeHaa\ArrayPath\NotFoundException
 
 ### ``exists()``
 
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz'], 'foo.bar'); // true
+    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.bar'); // true
     
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz'], 'foo.qux'); // false
+    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.qux'); // false
 
 ### ``set()``
 
