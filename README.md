@@ -27,6 +27,7 @@ Yet another array path implementation
 ### ``set()``
 
     $array = [];
+
     (new \PeeHaa\ArrayPath\ArrayPath())->set($array, 'foo.bar', 'value');
     
     var_dump($array);
@@ -44,6 +45,7 @@ Yet another array path implementation
 ### ``remove()``
 
     $array = ['foo' => ['bar' => 'value']];
+
     (new \PeeHaa\ArrayPath\ArrayPath())->remove($array, 'foo.bar');
     
     var_dump($array);
