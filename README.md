@@ -14,24 +14,30 @@ Yet another array path implementation
 
 ### ``get()``
 
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.bar'); // baz
+```php
+echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.bar'); // baz
     
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.qux'); // throws \PeeHaa\ArrayPath\NotFoundException
+echo (new \PeeHaa\ArrayPath\ArrayPath())->get(['foo' => ['bar' => 'baz']], 'foo.qux'); // throws \PeeHaa\ArrayPath\NotFoundException
+```
 
 ### ``exists()``
 
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.bar'); // true
+```php
+echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.bar'); // true
     
-    echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.qux'); // false
+echo (new \PeeHaa\ArrayPath\ArrayPath())->exists(['foo' => ['bar' => 'baz']], 'foo.qux'); // false
+```
 
 ### ``set()``
 
-    $array = [];
+```php
+$array = [];
 
-    (new \PeeHaa\ArrayPath\ArrayPath())->set($array, 'foo.bar', 'value');
+(new \PeeHaa\ArrayPath\ArrayPath())->set($array, 'foo.bar', 'value');
     
-    var_dump($array);
-    
+var_dump($array);
+```
+
     /**
     array(1) {
       ["foo"]=>
@@ -44,12 +50,14 @@ Yet another array path implementation
 
 ### ``remove()``
 
+```php
     $array = ['foo' => ['bar' => 'value']];
 
     (new \PeeHaa\ArrayPath\ArrayPath())->remove($array, 'foo.bar');
     
     var_dump($array);
-    
+```
+
     /**
     array(1) {
       ["foo"]=>
