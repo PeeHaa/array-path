@@ -46,7 +46,7 @@ class ArrayPathTest extends TestCase
     {
         (new ArrayPath())->set($this->source, 'key3', 'value3');
 
-        $this->assertTrue(isset($this->source['key3']));
+        $this->assertNotEmpty($this->source['key3']);
         $this->assertSame('value3', $this->source['key3']);
     }
 
@@ -56,7 +56,7 @@ class ArrayPathTest extends TestCase
 
         (new ArrayPath())->set($source, 'key3', 'value3');
 
-        $this->assertTrue(isset($source['key3']));
+        $this->assertNotEmpty($source['key3']);
         $this->assertSame('value3', $source['key3']);
     }
 
@@ -64,7 +64,7 @@ class ArrayPathTest extends TestCase
     {
         (new ArrayPath())->set($this->source, 'key1.key13.key131', 'value131');
 
-        $this->assertTrue(isset($this->source['key1']['key13']['key131']));
+        $this->assertNotEmpty($this->source['key1']['key13']['key131']);
         $this->assertSame('value131', $this->source['key1']['key13']['key131']);
     }
 
